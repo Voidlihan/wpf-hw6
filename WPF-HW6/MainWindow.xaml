@@ -19,37 +19,37 @@
             <ColumnDefinition Width="531*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="4">
-            <Button Content="Купить" FontSize="20" FontWeight="Bold" Background="Orange" Foreground="White" Grid.Column="1" HorizontalAlignment="Left" Margin="391,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="52" Width="130" Click="BuyAll"/>
-            <DataGrid Height="37" Width="156" Margin="1 -50 1 1"/>
+            <Button x:Name="buyAll" Content="Купить" FontSize="20" FontWeight="Bold" Background="Orange" Foreground="White" Grid.Column="1" HorizontalAlignment="Left" Margin="391,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="52" Width="130" Click="BuyAll"/>
+            <DataGrid x:Name="dataGridSum" Height="37" Width="156" Margin="1 -50 1 1"/>
             <TextBlock Text="Итого:" Padding="50 5 1 1" TextWrapping="Wrap" Height="40" Width="118" Margin="1 -50 300 1" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="2">
             <TextBlock Text="Бензин:" FontSize="25" Height="46" Width="93" Margin="1 30 700 1"/>
-            <Button Content="92" Background="Orange" Foreground="White" FontSize="20" Width="66" Margin="50 -50 200 1" Height="32"/>
-            <Button Content="96" Background="Orange" Foreground="White" FontSize="20" Width="71" Margin="180 -50 1 1" Height="36"/>
-            <TextBox Grid.Row="1" Grid.Column="2" FontSize="20" Width="80" Height="32" Margin="5 -50 1 1"/>
-            <TextBox Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="80" Height="32"/>
+            <Button x:Name="btn92" Content="92" Background="Orange" Foreground="White" FontSize="20" Width="66" Margin="50 -50 200 1" Height="32" Click="Benzin92"/>
+            <Button x:Name="btn96" Content="96" Background="Orange" Foreground="White" FontSize="20" Width="71" Margin="180 -50 1 1" Height="36" Click="Benzin96"/>
+            <TextBox x:Name="textBox92" Grid.Row="1" Grid.Column="2" FontSize="20" Width="80" Height="32" Margin="5 -50 1 1"/>
+            <TextBox x:Name="textBox96" Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="80" Height="32"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
             <TextBlock Text="Шоколад:" FontSize="22" Height="37" Width="118" Margin="1 30 700 1"/>
-            <Button Content="Несквик" Background="Orange" Foreground="White" FontSize="20" Width="88" Margin="50 -50 200 1" Height="32"/>
-            <Button Content="Сникерс" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36"/>
-            <TextBox Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
-            <TextBox Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
+            <Button x:Name="btnNeskvik" Content="Несквик" Background="Orange" Foreground="White" FontSize="20" Width="88" Margin="50 -50 200 1" Height="32" Click="ButtonNeskvik"/>
+            <Button x:Name="btnSnikers" Content="Сникерс" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36" Click="ButtonSnikers"/>
+            <TextBox x:Name="textBoxNeskvik" Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
+            <TextBox x:Name="textBoxSnikers" Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
             <TextBlock Text="Незамерзайка:" Padding="1 10 1 1" FontSize="14" Height="41" Width="117" Margin="1 30 700 1"/>
-            <Button Content="5 литр" Background="Orange" Foreground="White" FontSize="20" Width="88" Margin="50 -50 200 1" Height="32"/>
-            <Button Content="2 литр" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36"/>
-            <TextBox Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
-            <TextBox Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
+            <Button x:Name="btn5liter" Content="5 литр" Background="Orange" Foreground="White" FontSize="20" Width="88" Margin="50 -50 200 1" Height="32" Click="Button5liter"/>
+            <Button x:Name="btn2liter" Content="2 литр" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36" Click="Button2liter"/>
+            <TextBox x:Name="textBox5liter" Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
+            <TextBox x:Name="textBox2liter" Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.ColumnSpan="2">
             <TextBlock Text="Стеклочистка:" Padding="1 10 1 1" FontSize="14" Height="41" Width="117" Margin="1 30 700 1"/>
-            <Button Content="Glass Clean" Background="Orange" Foreground="White" FontSize="15" Width="88" Margin="50 -50 200 1" Height="32"/>
-            <Button Content="Diamond" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36"/>
-            <TextBox Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
-            <TextBox Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
+            <Button x:Name="btnGlassClean" Content="Glass Clean" Background="Orange" Foreground="White" FontSize="15" Width="88" Margin="50 -50 200 1" Height="32" Click="GlassClean"/>
+            <Button x:Name="btnDiamond" Content="Diamond" Background="Orange" Foreground="White" FontSize="20" Width="83" Margin="180 -50 1 1" Height="36" Click="Diamond"/>
+            <TextBox x:Name="textBoxGlassClean" Grid.Row="1" Grid.Column="2" FontSize="20" Width="69" Height="32" Margin="15 -50 1 1"/>
+            <TextBox x:Name="textBoxDiamond" Grid.Row="1" Grid.Column="2" Margin="340 -50 1 1" FontSize="20" Width="72" Height="32"/>
         </StackPanel>
     </Grid>
 </Window>
